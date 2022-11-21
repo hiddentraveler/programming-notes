@@ -1,0 +1,60 @@
+#+TITLE: javascript-part-1
+* Javascript values and variables
+- Name variable using camel casing like 'firstName', cause 'FirstName' kind of naming variable is generely used for object oriented programming in Javascript .
+- Only two symbols '_' and '$' are allowed in naming a variable besides number and letters.
+- All capital variables (e.g. let PI = 3.14 ) are reserved for constants.
+* Data Types
+- javascript programs execute from top to bottom.
+- In javascript values have a type not variables .
+- When a variable for the firstime you have to type 'let'(e.g. let myAge = 20; ), but when are reassigning it's value you don't have to declare it (e.g. myAge = true;) .
+- An empty variable is 'undefined' in value and type .
+** there is a Bug in 'typeof' [e.g. console.log(typeof null)] oparator
+that is it shows 'null' as an Object .
+* let,const and var
+- const is constant which value never changes.
+- you should generally use 'const' to declare variables, so you can choose which variables are allowed to change.
+** Basic Operators
+- There are many types of oparators.
+** math opretators
+---------------
+Math operetors are simply +,-,*,/,**
+
+** Comparison operators
+--------------------
+<,>,>= (greater or equal),<= (less or equal)
+** assignment operators
+- = (e.g. let x = 10 + 5)
+- += (e.g. x += 10 // x = x + 10)
+- *= (e.g. x *= 4 // x = x * 4)
+- ++ (e.g. x++ // x = x + 1)
+- -- (e.g. x-- // x = x - 1)
+* Operator Precedence
+Some operators have presedence over other operators and some execute from right-to-left while others left-to-right .
+- see mdn website to get the full list.
+* Strings and Template literals
+You can use `` as '' because it works to create a string just as good and you can use a variable inside of a string very easily (e.g. `My name is ${firstName}`) and you can line break without using \n\(which by the way is a *BUG* of the language).
+You can use any expression inside of ${} .
+* If_else statements
+- In if_else statements else condition is optional.
+- Any variable that is defined inside of a code block can't be acessed by outside of that code block. If you want to give it a value inside of the code block and acess it outside then you have to declare outside the block and then you can give value inside and then acess the value outside .
+* Truthy and Falsy values
+Truthy and Falsy values are values that once converted into booleans becomes true or false.
+- There is 5 type of Falsy values: 0,'',undefined,null,NaN .
+- Every other value will convert to true if converted to booleans.
+* Equality operators
+- There is two equality operators '==' (loose) and '==='(strict) loose operators convert values when comparing values but strict one does not do type conversion.
+
+- For clean code mostly use === for equality operators even if you need type conversion, do that manually.
+- !==(strict), !=(loose) is used as not-equality-operators.
+* Boolean Logic
+[[file:images/boolean.png]]
+Not operator(!) has precedence over 'and','or' oparators.
+ [[file:/home/neoorez/Notes/programming/javascript/images/2022-06-27_12-21.png]]
+* Logical Operators
+- AND(&&),OR(||),NOT(!)
+* Switch statements
+* Ternery operators
+#+BEGIN_SRC javascript
+ const drink = age >= 18 ? 'wine' : 'water'
+#+END_SRC
+- We can't use a if else statements in string litreals but Ternery operators can be used.

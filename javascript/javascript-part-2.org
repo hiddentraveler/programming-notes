@@ -1,0 +1,45 @@
+#+title: javascript-part-2
+
+* Strict mode
+To make javascript a little more debugging friendly use strict mode.To use it you have to just start the file with: 'use strict';
+* Functions
+Functions in javascript is not a type but a value, so it can be stored in a variable.
+#+BEGIN_SRC javascript
+// FUnction declaration
+function calcAge1(birthyear) {
+    return 2022 - birthyear;
+}
+const age1 = calcAge1(2002);
+console.log(age1);
+
+// Function expression
+const calcAge2 = function (birthyear) {
+    return 2022 - birthyear;
+}
+const age2 = calcAge2(2002);
+console.log(age2);
+
+#+END_SRC
+* Arrow function
+It was added in ES6; it is simply a shorter type of function expression.It's value is returned implicitly.
+#+BEGIN_SRC javascript
+const calcAge3 = birthyear => 2022 - birthyear;
+const age3 = calcAge3(2002);
+console.log(age3);
+#+END_SRC
+* Fuctions calling other functions
+[[file:/home/neoorez/Notes/programming/javascript/images/2022-07-02_10-44.png]]
+* array and objects
+In array you can't name the values, but in objects you can and in objects the value can change order but in array it won't change order.
+#+BEGIN_SRC javascript
+//array
+const friend = ['Manob','Biswas','student',0];
+//object
+const me = {
+    firstName: 'Hrittik',
+    lastName: 'Biswas',
+    job: 'student',
+    income: 0
+}
+#+END_SRC
+*

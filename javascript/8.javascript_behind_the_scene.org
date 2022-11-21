@@ -1,0 +1,33 @@
+#+title:Javascript Behind The Scene
+
+* Overview
+JAVASCRIPT IS A HIGH-LEVEL, PROTOTYPE-BASED OBJECT-ORIENTED,
+MULTI-PARADIGM, INTERPRETED OR JUST-IN-TIME COMPILED,
+DYNAMIC, SINGLE-THREADED, GARBAGE-COLLECTED PROGRAMMING
+LANGUAGE WITH FIRST-CLASS FUNCTIONS AND A NON-BLOCKING
+EVENT LOOP CONCURRENCY MODEL
+
++ High-level: It is not machine code or assembly
++ Garbage-collected: It handles the memory managment of the program and not the programmer.
++ Interpreted or Just-In-Time compiled: self explanatory.
++ Multi-paradigm: Paradigm: An approach and mindset of structuring code, which will direct your coding style and technique.
+  - Procedural programming
+  - Object-oriented programming (OOP)
+  - Functional programming (FP)
+  - javascript has it all
+
+* Javascript Engine and callstack
+** Engine
+Javascript engine first parses the code then it compiles it and then the execution happens while the code optimizes in the background
+- Execution of javascript course happens in the callstack.
+- Javascript engine is made of two things
+  + code heap
+  + javascript callstack
+** Runtime in Browser
+In Browser runtime is madeup of three things
++ Engine
++ Call queue
++ Web Api
+
+** Runtime in nodejs
+*
