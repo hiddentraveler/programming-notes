@@ -28,7 +28,7 @@ const age3 = calcAge3(2002);
 console.log(age3);
 #+END_SRC
 * Fuctions calling other functions
-[[file:/home/neoorez/Notes/programming/javascript/images/2022-07-02_10-44.png]]
+[[file:images/2022-07-02_10-44.png]]
 * array and objects
 In array you can't name the values, but in objects you can and in objects the value can change order but in array it won't change order.
 #+BEGIN_SRC javascript
